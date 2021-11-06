@@ -9,11 +9,11 @@ namespace aspDateQueryStringBugSDK
     {
         private readonly HttpClient _httpClient;
 
-        public AspDateQueryStringBugRequestSender()
+        public AspDateQueryStringBugRequestSender(Uri baseAddress)
         {
             _httpClient = new HttpClient()
             {
-                BaseAddress = new Uri("http://localhost:5001")
+                BaseAddress = baseAddress
             };
         }
 
